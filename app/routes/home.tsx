@@ -1,7 +1,6 @@
 import { useState } from "react";
-import type { Route } from "./+types/home";
 
-export function meta({}: Route.ComponentProps) {
+export function meta({}: Route.MetaArgs) {
   return [
     { title: "Checkout - Airline" },
     { name: "description", content: "Complete your booking" },
