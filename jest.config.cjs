@@ -7,6 +7,7 @@ module.exports = {
   moduleNameMapper: {
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
     '\\.(jpg|jpeg|png|gif|svg)$': '<rootDir>/__mocks__/fileMock.js',
+    '\\./\\+types/(.*)$': '<rootDir>/__mocks__/routeTypesMock.js',
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.cjs'],
   collectCoverageFrom: [
