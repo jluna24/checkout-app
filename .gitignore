@@ -8,6 +8,9 @@ node_modules/
 /dist/
 /.react-router/
 
+# Legacy/unused source directories
+/src/
+
 # Environment variables
 .env
 .env.local

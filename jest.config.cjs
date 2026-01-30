@@ -4,6 +4,13 @@ module.exports = {
   testEnvironment: 'jsdom',
   roots: ['<rootDir>/app'],
   testMatch: ['**/__tests__/**/*.test.ts?(x)', '**/?(*.)+(spec|test).ts?(x)'],
+  testPathIgnorePatterns: [
+    '/node_modules/',
+    '/build/',
+    '/dist/',
+    '/.react-router/',
+    '/src/',
+  ],
   moduleNameMapper: {
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
     '\\.(jpg|jpeg|png|gif|svg)$': '<rootDir>/__mocks__/fileMock.js',

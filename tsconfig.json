@@ -1,9 +1,16 @@
 {
   "include": [
-    "**/*",
+    "app/**/*",
     "**/.server/**/*",
     "**/.client/**/*",
     ".react-router/types/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    ".react-router",
+    "src"
   ],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
