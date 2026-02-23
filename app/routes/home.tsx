@@ -1,3 +1,4 @@
+import type { Route } from "./+types/home";
 import { useState } from "react";
 
 export function meta({}: Route.MetaArgs) {
